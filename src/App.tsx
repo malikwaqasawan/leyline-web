@@ -1,14 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import CreateUser from "./pages/create-user";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+
+  const [isUserExist, setIsUserExist] = useState(false);
 
   return (
-    <h1 className='text-wrap'>Vite + React</h1>
-  )
+    <div className="container">
+      <CreateUser />
+    </div>
+  );
 }
 
-export default App
+export default App;
